@@ -195,5 +195,5 @@ For issues, feature requests, or questions:
 
 ---
 
-**Version**: 1.0.0 (Consolidated)  
+**Version**: 1.0.0 (Consolidated)
 **Last Updated**: June 5, 2026

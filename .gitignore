@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+pip-packages/
+__pycache__/
+*.pyc
+venv/
+env/
+.venv
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+*.egg-info/
+
+# Testing
+coverage/
+.nyc_output/
+.junit/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pip-debug.log*
+
+# Runtime
+.emergent/
+memory/
+temp/
+tmp/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Generated
+*.generated.ts
+*.generated.js
