@@ -1,0 +1,101 @@
+{
+  "theme_name": "Lab Instrument",
+  "version": "1.0",
+  "description": "Swiss & High-Contrast / Modern Lab Instrument - Scientific, precise, premium, dense, hyper-legible, data-centric.",
+  "archetype": "4 (Swiss & High-Contrast / Modern Lab Instrument)",
+  "vibe": "Scientific, precise, premium, dense, hyper-legible, data-centric.",
+  "theme_mode": "Dark",
+  "colors": {
+    "background": {
+      "main": "#050505",
+      "card": "#0A0A0A",
+      "surface_hover": "#141414",
+      "overlay": "rgba(0, 0, 0, 0.8)"
+    },
+    "text": {
+      "primary": "#FAFAFA",
+      "secondary": "#A3A3A3",
+      "muted": "#525252"
+    },
+    "accents": {
+      "primary": "#F59E0B",
+      "secondary": "#E11D48",
+      "tertiary": "#FCD34D",
+      "border": "#262626"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Chivo",
+      "body": "IBM Plex Sans",
+      "mono": "IBM Plex Mono"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl font-black tracking-tighter leading-none text-zinc-50",
+      "h2": "text-2xl sm:text-3xl font-bold tracking-tight text-zinc-100",
+      "h3": "text-xl font-semibold tracking-tight text-zinc-200",
+      "overline": "text-xs font-mono uppercase tracking-[0.2em] text-amber-500",
+      "body": "text-sm leading-relaxed text-zinc-400",
+      "data_point": "text-base font-mono text-zinc-100"
+    }
+  },
+  "layout_and_spacing": {
+    "grid_strategy": "Control Room Grid (Dense, Functional)",
+    "container_padding": "p-4 md:p-6",
+    "gap_size": "gap-4 md:gap-6",
+    "radius": "rounded-none md:rounded-sm max-w-[4px]",
+    "card_style": "bg-[#0A0A0A] border border-zinc-800 p-4 md:p-6 shadow-none flex flex-col hover:border-zinc-700 transition-colors"
+  },
+  "components": {
+    "buttons": "Flat, sharp edges. Primary: bg-amber-500 text-black hover:bg-amber-400 font-bold. Secondary: border border-zinc-700 bg-transparent text-zinc-300 hover:text-white hover:border-zinc-600",
+    "tables": "Extremely dense. py-2 text-sm font-mono for data cells. border-b border-zinc-800/50. Hover states on rows: bg-zinc-900/50.",
+    "inputs": "bg-transparent border-zinc-800 text-zinc-100 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 rounded-sm font-mono text-sm."
+  },
+  "visual_enhancers": {
+    "borders": "1px solid #262626. Use the 'Grid Borders' micro-theme: expose the skeleton of the layout.",
+    "glassmorphism": "Avoid entirely for dashboards. Use flat solid dark grays to prevent data refraction and maintain clinical precision.",
+    "textures": "Add a very subtle 2% noise overlay to the main background to reduce digital flatness.",
+    "charts": "No soft gradients. Use sharp, distinct color blocks (Amber, Crimson, Off-White) for Sunbursts and Donut charts."
+  },
+  "advanced_visualizations": {
+    "chromosome_ideogram": {
+      "library": "d3",
+      "styling": "Dark mode SVG. Chromosome backbone in #262626, active segments mapped with Amber/Crimson, centromeres marked with white. Hover tooltips must snap precisely to bp locations."
+    },
+    "haplogroup_globe": {
+      "library": "react-globe.gl",
+      "styling": "arcs color: Amber/Crimson, background: transparent. Remove atmosphere glow for flat technical look. Globe map must be dark."
+    },
+    "ancestry_sunburst": {
+      "library": "d3",
+      "styling": "Flat SVG paths. High contrast boundaries (1px black stroke between segments)."
+    }
+  },
+  "media": {
+    "hero_image": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/b5760be5-c0ae-4a2b-806d-97e6f63c157a/images/a730a281315e8765e5ecb0b3751018670ea5fc6f1ee2eb0c40286e30cb67f487.png",
+      "description": "Abstract high-end 3D visualization of DNA helix, used for login/onboarding background or empty states. Max overlay black/40."
+    },
+    "chromosome_abstract": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/b5760be5-c0ae-4a2b-806d-97e6f63c157a/images/f224fd891e96ac97bd551686f5123919512816ffe4f644c3c1be3967fed8c8c8.png",
+      "description": "Microscopic view of chromosomes, useful for marketing landing page or header graphics."
+    }
+  },
+  "iconography": {
+    "library": "@phosphor-icons/react",
+    "style": "duotone or regular. Precise, geometric. Avoid playful/rounded icons."
+  },
+  "accessibility": {
+    "contrast": "WCAG AA minimum (4.5:1 for body text)",
+    "data_testid_requirement": "CRITICAL: All interactive elements MUST have data-testid attributes in kebab-case"
+  },
+  "instructions_to_main_agent": [
+    "Install and use '@phosphor-icons/react' as the icon library.",
+    "DO NOT default to purple or teal. Stick strictly to the Obsidian/Amber/Crimson palette defined.",
+    "Use raw HTML/Tailwind for the landing page. Use Shadcn + deep customization for the dashboard.",
+    "Use D3.js for the Chromosome Ideogram. It requires D3 for precise raw coordinate mapping (start/stop bp).",
+    "Use react-globe.gl for the Haplogroup migration map.",
+    "Implement the 'Control Room' dense grid for the dashboard. 1px borders, minimal radii, maximum data visibility.",
+    "Use IBM Plex Mono for all genomic coordinates (chr positions, cM, start/stop values)."
+  ]
+}

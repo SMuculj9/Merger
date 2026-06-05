@@ -1,0 +1,118 @@
+{
+  "theme_name": "Bio-Tech",
+  "version": "1.0",
+  "description": "Dark Mode Bio-Tech Variant - Swiss & High-Contrast with genetic focus",
+  "archetype": "Swiss & High-Contrast (Dark Mode Bio-Tech Variant)",
+  "theme_mode": "dark",
+  "global_styles": {
+    "background": "bg-[#0A0A0C]",
+    "text": "text-[#FAFAFA]"
+  },
+  "typography": {
+    "fonts_to_install": [
+      "Cabinet Grotesk",
+      "IBM Plex Sans",
+      "IBM Plex Mono"
+    ],
+    "headings": {
+      "family": "font-sans",
+      "css_import": "@import url('https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;700;900&display=swap');",
+      "classes": "font-['Cabinet_Grotesk'] font-bold tracking-tight text-white",
+      "hierarchy": {
+        "h1": "text-4xl sm:text-5xl",
+        "h2": "text-2xl sm:text-3xl",
+        "h3": "text-xl sm:text-2xl",
+        "h4": "text-lg"
+      }
+    },
+    "body": {
+      "family": "font-sans",
+      "css_import": "@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');",
+      "classes": "font-['IBM_Plex_Sans'] font-normal leading-relaxed text-[#A0A0AB]"
+    },
+    "mono": {
+      "family": "font-mono",
+      "css_import": "@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');",
+      "classes": "font-['IBM_Plex_Mono'] text-xs tracking-widest uppercase"
+    }
+  },
+  "colors": {
+    "background_base": "#0A0A0C",
+    "surface": "#121216",
+    "surface_hover": "#1C1C22",
+    "surface_glass": "rgba(18, 18, 22, 0.7)",
+    "primary_action": "#3366FF",
+    "gene_positive": "#00E676",
+    "gene_warning": "#FFC400",
+    "gene_alert": "#FF2A55",
+    "border": "rgba(255, 255, 255, 0.08)",
+    "text_primary": "#FAFAFA",
+    "text_secondary": "#A0A0AB",
+    "text_muted": "#666670"
+  },
+  "layout": {
+    "dashboard_grid": "grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6",
+    "spacing": "Generous paddings (p-6, p-8) for deep-dive sections. Dense padding (p-4) for data tables and widgets.",
+    "alignment": "Strict left-alignment for data and copy. Grid items use align-items: start with align-self: stretch for consistent heights."
+  },
+  "surfaces_and_components": {
+    "cards": "bg-[#121216] border border-white/5 rounded-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] overflow-hidden",
+    "glass_panels": "backdrop-blur-2xl bg-[#121216]/70 border border-white/10",
+    "tracing_beam_card": "Apply to Premium Deep Dives (Longevity, Mind). Use a 1px glowing primary_action border.",
+    "buttons": {
+      "primary": "bg-[#3366FF] hover:bg-[#2952CC] text-white border-none rounded-md px-6 py-2.5 text-sm font-medium transition-colors",
+      "outline": "bg-transparent border border-[#3366FF]/50 text-[#3366FF] hover:bg-[#3366FF]/10 rounded-md px-4 py-2 text-sm uppercase tracking-widest font-['IBM_Plex_Mono'] transition-colors"
+    },
+    "inputs": "bg-[#0A0A0C] border border-white/10 rounded-md focus:border-[#3366FF] focus:ring-1 focus:ring-[#3366FF] text-white",
+    "tables": "w-full text-left. Th: text-xs font-['IBM_Plex_Mono'] text-[#A0A0AB] uppercase pb-3 border-b border-white/10. Td: py-3 border-b border-white/5 font-['IBM_Plex_Sans']."
+  },
+  "data_visualization": {
+    "charts": "Use Recharts. No filled areas to maintain sleekness. Stroke width 2. Glow effect using drop-shadow on SVG lines. Colors: #3366FF, #00E676, #FFC400.",
+    "ancestry_map": "Abstract visual representation. Use a dark dotted background or Recharts ScatterChart to plot geo-proxies, avoiding standard overly-complex map svgs if unneeded."
+  },
+  "pages_and_features": {
+    "dashboard_home": "Bento grid layout. Top bar with 'Bundus Assistant' summary panel. Middle section: Interactive Ancestry Map (col-span-8) + Precision Health Panel (col-span-4).",
+    "trait_deep_dives": "Scrollable analytical sections. Longevity (FOXO3), Mind & Temperament (COMT). Use distinct iconography and progress/meter bars for trait expression.",
+    "dna_explorer": "Data-heavy terminal-style table. Columns: RSID, Chromosome, Position, Genotype, Impact. Use Mono font for RSIDs and Genotypes.",
+    "auth_and_upload": "Center-aligned glassmorphism card over the hero background image. Dropzone with dashed border and subtle hover state."
+  },
+  "tone_and_copy": {
+    "persona": "Bundus (Executive Assistant)",
+    "style": "Calm, precise, competent, highly scientific but accessible.",
+    "examples": [
+      "Good morning. Your DNA data indicates a rapid caffeine metabolism (CYP1A2). Adjusting intake timing is recommended for optimal REM sleep.",
+      "Your longevity markers (FOXO3) show a favorable expression for cellular repair."
+    ]
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://static.prod-images.emergentagent.com/jobs/db256171-4328-4e7b-adb8-479473b43277/images/f3b1ccba857ddd67d946bd35dd2f423eac9e147e046b99f155c0f25607d202bd.png",
+        "description": "High-end glowing DNA helix in dark void for Auth or Upload splash screen."
+      },
+      {
+        "category": "abstract_bio_texture",
+        "url": "https://static.prod-images.emergentagent.com/jobs/db256171-4328-4e7b-adb8-479473b43277/images/4335288b75364bf6d47651e1b36e1df73b19b5f6dc54382bbda30b57181f2a64.png",
+        "description": "Microscopic cell structure texture. Use as a low opacity (5-10%) background image in large Deep Dive cards."
+      },
+      {
+        "category": "data_visualization_fallback",
+        "url": "https://images.pexels.com/photos/35967917/pexels-photo-35967917.png",
+        "description": "Artistic rendering of a DNA strand with particle effects against a dark background, for trait illustrations."
+      }
+    ]
+  },
+  "accessibility_and_testing": {
+    "data_testid_requirement": "CRITICAL: All interactive and key informational elements MUST include a kebab-case role-based data-testid attribute (e.g., data-testid='upload-dna-button', data-testid='trait-search-input')",
+    "contrast": "Ensure text contrast meets standards against dark slate backgrounds. Use text-[#FAFAFA] for primary data, never #FFFFFF or #000000 flatly."
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the 'Control Room' dense grid strategy for the dashboard.",
+    "Use Lucide-React or Phosphor Icons for crisp, technical icons.",
+    "Implement charts using Recharts with dark mode customization (stroke-based, no fills).",
+    "Build the UI directly with Tailwind classes and standard accessible HTML elements. If using Shadcn, heavily strip its default Vercel-look to match this Dark Swiss aesthetic.",
+    "Include a 'Bundus Assistant' sticky or fixed summary panel that provides plain-text interpretation of the charts.",
+    "Ensure the DNA Explorer table handles large simulated data cleanly (use overflow-y-auto and sticky headers)."
+  ]
+}
